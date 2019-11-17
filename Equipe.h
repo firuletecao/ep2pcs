@@ -18,3 +18,4 @@ class Equipe {
 };
 
 #endif // EQUIPE_H
+
