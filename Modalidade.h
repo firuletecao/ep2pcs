@@ -7,8 +7,7 @@
 
 using namespace std;
 
-class Modalidade
-{
+class Modalidade {
     public:
         Modalidade(string nome, Equipe** participantes, int quantidade);
         virtual ~Modalidade();
@@ -28,7 +27,7 @@ class Modalidade
         Equipe** resultado;
         string nome;
         int quantidadeDeEquipes;
-        bool resultado;
+        int temResultado;
 };
 
 #endif // MODALIDADE_H
