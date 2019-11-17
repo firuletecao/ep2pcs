@@ -23,9 +23,11 @@ class CompeticaoMultimodalidades: public Competicao {
 
     private:
         int quantidadeDeModalidades;
+        int posicaoEquipe;
         string nome;
         Equipe** equipesParticipantes;
         list<Modalidade*>* listaDeModalidades;
+        static vector<int>* pontuacao;
 };
 
 #endif // COMPETICAOMULTIMODALIDADES_H
