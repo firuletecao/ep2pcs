@@ -1,4 +1,9 @@
 bin/
 obj/
+<<<<<<< HEAD
 ep2pcs.layout
 ep2pcs.depend
+=======
+ep2pcs.depend
+ep2pcs.layout
+>>>>>>> 006fde7ce017725e6fa7d74252632f351252d13f
