@@ -2,7 +2,7 @@
 
 Equipe::Equipe()
 {
-    //ctor PEDRAO TO AQUI
+    //ctor eU QUE TO AQUI MAT
 }
 
 Equipe::~Equipe()
