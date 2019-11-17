@@ -9,8 +9,14 @@ using namespace std;
 class CompeticaoMultimodalidades
 {
     public:
-        CompeticaoMultimodalidades(string nome, Equipe** );
+        CompeticaoMultimodalidades(string nome, Equipe** equipes, int quantidade);
         virtual ~CompeticaoMultimodalidades();
+
+        void adicionar(Modalidade* m);
+        list<Modalidade*>* getModalidades();
+
+        static void setPontuacao(vector<int>* pontos);
+        static int getPontoPorPosicao(int posicao);
 
     private:
 };
