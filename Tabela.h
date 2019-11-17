@@ -17,7 +17,7 @@ class Tabela
         virtual int getPosicao(Equipe* participante)=0;
         virtual Equipe** getEquipesEmOrdem()=0;
         virtual int getQuantidadeDeEquipes();
-        virtual void imprimir();
+        virtual void imprimir()=0;
     protected:
         Equipe** participantes;
         int quantidadeDeEquipes;

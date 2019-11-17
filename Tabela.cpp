@@ -16,5 +16,4 @@ Tabela::~Tabela(){}
  int Tabela::getQuantidadeDeEquipes(){
      return quantidadeDeEquipes;
  }
- void Tabela::imprimir(){
- }
+
