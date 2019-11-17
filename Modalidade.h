@@ -28,6 +28,7 @@ class Modalidade {
         string nome;
         int quantidadeDeEquipes;
         int existeResultado;
+        TabelaComOrdem* tabelaModalidade;
 };
 
 #endif // MODALIDADE_H

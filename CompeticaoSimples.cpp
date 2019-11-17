@@ -11,11 +11,11 @@ CompeticaoSimples::~CompeticaoSimples() {
 Modalidade* CompeticaoSimples::getModalidade() {
     return modalidade;
 }
-/*
+
 Tabela* CompeticaoSimples::getTabela() {
-    return;
+     return modalidade->getTabela();
 }
-*/
+
 void CompeticaoSimples::imprimir() {
 
 }

@@ -1,40 +1,34 @@
 # depslib dependency file v1.0
-1573997835 source:c:\users\mth-nb\desktop\ghep2\ep2pcs\main.cpp
+1574007850 source:c:\users\mth-nb\desktop\ghep2\ep2pcs\main.cpp
 	<iostream>
 
-1573998763 source:c:\users\mth-nb\desktop\ghep2\ep2pcs\equipe.cpp
+1574007850 source:c:\users\mth-nb\desktop\ghep2\ep2pcs\equipe.cpp
 	"Equipe.h"
 
-1573998854 c:\users\mth-nb\desktop\ghep2\ep2pcs\equipe.h
+1574007850 c:\users\mth-nb\desktop\ghep2\ep2pcs\equipe.h
 	<stdio.h>
 	<string>
 
-1574002673 source:c:\users\mth-nb\desktop\ghep2\ep2pcs\tabela.cpp
+1574007850 source:c:\users\mth-nb\desktop\ghep2\ep2pcs\tabela.cpp
 	"Tabela.h"
 
-1574002673 c:\users\mth-nb\desktop\ghep2\ep2pcs\tabela.h
-	<string>
+1574007850 c:\users\mth-nb\desktop\ghep2\ep2pcs\tabela.h
 	<stdexcept>
-	<stdio.h>
 	"Equipe.h"
 
-1574002673 source:c:\users\mth-nb\desktop\ghep2\ep2pcs\tabelacomordem.cpp
+1574007850 source:c:\users\mth-nb\desktop\ghep2\ep2pcs\tabelacomordem.cpp
 	"TabelaComOrdem.h"
 
-1574002697 c:\users\mth-nb\desktop\ghep2\ep2pcs\tabelacomordem.h
-	<string>
+1574007850 c:\users\mth-nb\desktop\ghep2\ep2pcs\tabelacomordem.h
 	<stdexcept>
-	<stdio.h>
 	"Equipe.h"
 	"Tabela.h"
 
-1574005004 source:c:\users\mth-nb\desktop\ghep2\ep2pcs\tabelacompontos.cpp
+1574007850 source:c:\users\mth-nb\desktop\ghep2\ep2pcs\tabelacompontos.cpp
 	"TabelaComPontos.h"
 
-1574004533 c:\users\mth-nb\desktop\ghep2\ep2pcs\tabelacompontos.h
-	<string>
+1574007850 c:\users\mth-nb\desktop\ghep2\ep2pcs\tabelacompontos.h
 	<stdexcept>
-	<stdio.h>
 	"Equipe.h"
 	"Tabela.h"
 
@@ -100,4 +94,25 @@
 
 1574006251 source:c:\users\pedro\onedrive\Área de trabalho\ep2pcs\ep2pcs\tabelacomordem.cpp
 	"TabelaComOrdem.h"
+
+1574007850 source:c:\users\mth-nb\desktop\ghep2\ep2pcs\competicao.cpp
+	"Competicao.h"
+
+1574007850 c:\users\mth-nb\desktop\ghep2\ep2pcs\competicao.h
+	<stdexcept>
+	"Tabela.h"
+	"Equipe.h"
+
+1574007850 source:c:\users\mth-nb\desktop\ghep2\ep2pcs\competicaomultimodalidades.cpp
+	"CompeticaoMultimodalidades.h"
+
+1574007850 c:\users\mth-nb\desktop\ghep2\ep2pcs\competicaomultimodalidades.h
+	"Equipe.h"
+	"Modalidade.h"
+	"Competicao.h"
+
+1574008908 c:\users\mth-nb\desktop\ghep2\ep2pcs\modalidade.h
+	<stdexcept>
+	"TabelaComOrdem.h"
+	"Equipe.h"
 

@@ -15,10 +15,7 @@ Modalidade::Modalidade(string nome, Equipe** participantes, int quantidade) {
     }
 }
 
-Modalidade::~Modalidade() {
-
-}
-
+Modalidade::~Modalidade() {}
 string Modalidade::getNome() {
     return nome;
 }
@@ -49,9 +46,10 @@ bool Modalidade::temResultado() {
 }
 
 TabelaComOrdem* Modalidade::getTabela() {
-
+            tabelaModalidade=TabelaComOrdem(resultado, quantidadeDeEquipes);
+            return tabelaModalidade;
 }
-/*
+
 void Modalidade::imprimir() {
     cout << "Modalidade" << getNome() << endl;
     //CHAMADA DO METODO IMPRIMIR DA TABELACOMORDEM
