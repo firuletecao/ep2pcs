@@ -1,8 +1,5 @@
 #ifndef COMPETICAOSIMPLES_H
 #define COMPETICAOSIMPLES_H
-#include <iostream>
-#include <stdexcept>
-#include <string>
 #include "Equipe.h"
 #include "Modalidade.h"
 #include "Competicao.h"
@@ -14,7 +11,10 @@ class CompeticaoSimples: public Competicao {
         CompeticaoSimples(string nome, Equipe** equipes, int quantidade, Modalidade* m);
         virtual ~CompeticaoSimples();
 
+        Tabela* getTabela();
         Modalidade* getModalidade();
+        void imprimir();
+
     private:
         Modalidade* modalidade;
 };

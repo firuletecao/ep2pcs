@@ -1,14 +1,9 @@
 #include "Modalidade.h"
-#include <iostream>
-#include <stdexcept>
-#include <string>
-
-using namespace std;
 
 Modalidade::Modalidade(string nome, Equipe** participantes, int quantidade) {
     this->nome = nome;
     quantidadeDeEquipes = quantidade;
-    temResultado = 0;
+    existeResultado = 0;
 
     if(quantidade < 2) {
         throw new invalid_argument("Nao ha equipes suficientes.");
@@ -44,11 +39,11 @@ void Modalidade::setResultado(Equipe** ordem) {
         resultado[i] = ordem[i];
     }
     //CONTABILIZANDO QUE SETRESULTADO JA FOI CHAMADO UMA OU MAIS VEZES
-    temResultado = 1;
+    existeResultado = 1;
 }
 
 bool Modalidade::temResultado() {
-    if(temResultado = 1) {
+    if(existeResultado = 1) {
         return true;
     } else return false;
 }
@@ -56,7 +51,7 @@ bool Modalidade::temResultado() {
 TabelaComOrdem* Modalidade::getTabela() {
 
 }
-
+/*
 void Modalidade::imprimir() {
     cout << "Modalidade" << getNome() << endl;
     //CHAMADA DO METODO IMPRIMIR DA TABELACOMORDEM

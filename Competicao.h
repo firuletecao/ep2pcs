@@ -1,8 +1,7 @@
 #ifndef COMPETICAO_H
 #define COMPETICAO_H
-#include <iostream>
 #include <stdexcept>
-#include <string>
+#include "Tabela.h"
 #include "Equipe.h"
 
 using namespace std;
@@ -17,8 +16,8 @@ class Competicao {
         Equipe** getEquipes();
         int getQuantidadeDeEquipes();
 
-        Tabela* getTabela();
-        void imprimir();
+        virtual Tabela* getTabela() = 0;
+        virtual void imprimir() = 0;
 
     protected:
         int quantidadeDeEquipes;

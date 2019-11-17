@@ -1,6 +1,6 @@
 #ifndef EQUIPE_H
 #define EQUIPE_H
-#include<stdio.h>
+#include <stdio.h>
 #include <string>
 
 using namespace std;

@@ -32,8 +32,14 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="Competicao.cpp" />
+		<Unit filename="Competicao.h" />
+		<Unit filename="CompeticaoSimples.cpp" />
+		<Unit filename="CompeticaoSimples.h" />
 		<Unit filename="Equipe.cpp" />
 		<Unit filename="Equipe.h" />
+		<Unit filename="Modalidade.cpp" />
+		<Unit filename="Modalidade.h" />
 		<Unit filename="Tabela.cpp" />
 		<Unit filename="Tabela.h" />
 		<Unit filename="TabelaComOrdem.cpp" />

@@ -38,3 +38,66 @@
 	"Equipe.h"
 	"Tabela.h"
 
+1574005599 source:c:\users\pedro\onedrive\햞ea de trabalho\ep2pcs\ep2pcs\tabela.cpp
+	"Tabela.h"
+
+1574006793 c:\users\pedro\onedrive\햞ea de trabalho\ep2pcs\ep2pcs\tabela.h
+	<stdexcept>
+	"Equipe.h"
+
+1574006836 c:\users\pedro\onedrive\햞ea de trabalho\ep2pcs\ep2pcs\equipe.h
+	<stdio.h>
+	<string>
+
+1574005599 source:c:\users\pedro\onedrive\햞ea de trabalho\ep2pcs\ep2pcs\tabelacompontos.cpp
+	"TabelaComPontos.h"
+
+1574005599 c:\users\pedro\onedrive\햞ea de trabalho\ep2pcs\ep2pcs\tabelacompontos.h
+	<string>
+	<stdexcept>
+	<stdio.h>
+	"Equipe.h"
+	"Tabela.h"
+
+1574006836 source:c:\users\pedro\onedrive\햞ea de trabalho\ep2pcs\ep2pcs\competicao.cpp
+	"Competicao.h"
+
+1574006836 c:\users\pedro\onedrive\햞ea de trabalho\ep2pcs\ep2pcs\competicao.h
+	<stdexcept>
+	"Tabela.h"
+	"Equipe.h"
+
+1574006485 source:c:\users\pedro\onedrive\햞ea de trabalho\ep2pcs\ep2pcs\competicaomultimodalidades.cpp
+	"CompeticaoMultimodalidades.h"
+
+1574006485 c:\users\pedro\onedrive\햞ea de trabalho\ep2pcs\ep2pcs\competicaomultimodalidades.h
+
+1573999085 source:c:\users\pedro\onedrive\햞ea de trabalho\ep2pcs\ep2pcs\equipe.cpp
+	"Equipe.h"
+
+1514140574 source:c:\users\pedro\onedrive\햞ea de trabalho\ep2pcs\ep2pcs\main.cpp
+	<iostream>
+
+1574006856 source:c:\users\pedro\onedrive\햞ea de trabalho\ep2pcs\ep2pcs\competicaosimples.cpp
+	"CompeticaoSimples.h"
+
+1574006836 c:\users\pedro\onedrive\햞ea de trabalho\ep2pcs\ep2pcs\competicaosimples.h
+	"Equipe.h"
+	"Modalidade.h"
+	"Competicao.h"
+
+1574006836 c:\users\pedro\onedrive\햞ea de trabalho\ep2pcs\ep2pcs\modalidade.h
+	<stdexcept>
+	"TabelaComOrdem.h"
+	"Equipe.h"
+
+1574005599 c:\users\pedro\onedrive\햞ea de trabalho\ep2pcs\ep2pcs\tabelacomordem.h
+	<string>
+	<stdexcept>
+	<stdio.h>
+	"Equipe.h"
+	"Tabela.h"
+
+1574006251 source:c:\users\pedro\onedrive\햞ea de trabalho\ep2pcs\ep2pcs\tabelacomordem.cpp
+	"TabelaComOrdem.h"
+

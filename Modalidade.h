@@ -1,8 +1,8 @@
 #ifndef MODALIDADE_H
 #define MODALIDADE_H
-#include <iostream>
+
 #include <stdexcept>
-#include <string>
+#include "TabelaComOrdem.h"
 #include "Equipe.h"
 
 using namespace std;
@@ -27,7 +27,7 @@ class Modalidade {
         Equipe** resultado;
         string nome;
         int quantidadeDeEquipes;
-        int temResultado;
+        int existeResultado;
 };
 
 #endif // MODALIDADE_H

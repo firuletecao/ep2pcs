@@ -1,8 +1,8 @@
 #ifndef TABELA_H
 #define TABELA_H
-#include <string>
+
 #include <stdexcept>
-#include<stdio.h>
+
 #include "Equipe.h"
 
 using namespace std;
