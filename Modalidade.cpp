@@ -46,11 +46,15 @@ bool Modalidade::temResultado() {
 }
 
 TabelaComOrdem* Modalidade::getTabela() {
-            tabelaModalidade=TabelaComOrdem(resultado, quantidadeDeEquipes);
+    /*nao tenho certeza se precisa do if*/
+        if(existeResultado==1){
+            tabelaModalidade= new TabelaComOrdem(resultado, quantidadeDeEquipes);
             return tabelaModalidade;
+        }
+        throw new logic_error("ainda nao existe resultado");
 }
 
 void Modalidade::imprimir() {
-    cout << "Modalidade" << getNome() << endl;
-    //CHAMADA DO METODO IMPRIMIR DA TABELACOMORDEM
+    cout << "Modalidade:" << nome << endl;
+    tabelaModalidade->imprimir();
 }

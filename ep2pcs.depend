@@ -2,11 +2,11 @@
 1574007850 source:c:\users\mth-nb\desktop\ghep2\ep2pcs\main.cpp
 	<iostream>
 
-1574007850 source:c:\users\mth-nb\desktop\ghep2\ep2pcs\equipe.cpp
+1574011503 source:c:\users\mth-nb\desktop\ghep2\ep2pcs\equipe.cpp
 	"Equipe.h"
 
-1574007850 c:\users\mth-nb\desktop\ghep2\ep2pcs\equipe.h
-	<stdio.h>
+1574011805 c:\users\mth-nb\desktop\ghep2\ep2pcs\equipe.h
+	<iostream>
 	<string>
 
 1574007850 source:c:\users\mth-nb\desktop\ghep2\ep2pcs\tabela.cpp
@@ -16,7 +16,7 @@
 	<stdexcept>
 	"Equipe.h"
 
-1574007850 source:c:\users\mth-nb\desktop\ghep2\ep2pcs\tabelacomordem.cpp
+1574012557 source:c:\users\mth-nb\desktop\ghep2\ep2pcs\tabelacomordem.cpp
 	"TabelaComOrdem.h"
 
 1574007850 c:\users\mth-nb\desktop\ghep2\ep2pcs\tabelacomordem.h
@@ -115,4 +115,21 @@
 	<stdexcept>
 	"TabelaComOrdem.h"
 	"Equipe.h"
+
+1574008560 source:c:\users\mth-nb\desktop\ghep2\ep2pcs\competicaosimples.cpp
+	"CompeticaoSimples.h"
+
+1574007980 source:c:\users\mth-nb\desktop\ghep2\ep2pcs\persistenciadecompeticao.cpp
+	"PersistenciaDeCompeticao.h"
+
+1574008099 c:\users\mth-nb\desktop\ghep2\ep2pcs\persistenciadecompeticao.h
+	"Competicao.h"
+
+1574010165 c:\users\mth-nb\desktop\ghep2\ep2pcs\competicaosimples.h
+	"Equipe.h"
+	"Modalidade.h"
+	"Competicao.h"
+
+1574012125 source:c:\users\mth-nb\desktop\ghep2\ep2pcs\modalidade.cpp
+	"Modalidade.h"
 

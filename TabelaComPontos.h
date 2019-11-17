@@ -21,6 +21,8 @@ class TabelaComPontos: public Tabela
     private:
         int* pontuacao;
         Equipe** ordenado;
+        int existeResultado;
+        int* pontuacaofinal;
 };
 
 #endif // TABELACOMPONTOS_H

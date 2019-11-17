@@ -3,10 +3,12 @@
 TabelaComPontos::TabelaComPontos(Equipe** participantes, int quantidade):Tabela(participantes, quantidade)
 {
         pontuacao= new int[quantidade];
+        pontuacaofinal = new int[quantidade];
         for(int i=0; i<quantidade; i++){
             pontuacao[i]=0;
         }
         ordenado= new Equipe*[quantidade];
+        existeResultado=0;
 }
 
 TabelaComPontos::~TabelaComPontos(){}
@@ -57,10 +59,21 @@ Equipe** TabelaComPontos::getEquipesEmOrdem(){
             if(pontuacao[k]<pontuacao[i]) k=i;
         }
         ordenado[j]=participantes[k];
+        pontuacaofinal[j]=pontuacao[k];
         pontuacao[k]=-1;
         /*isso vai dar problema se ele quiser chamar alguma coisa que depende de participantes depois de chamar essa funcao*/
     }
+    existeResultado=1;
     return ordenado;
 }
 void TabelaComPontos::imprimir(){
+      if(!existeResultado){
+        for(int i=0;i<quantidadeDeEquipes;i++){
+            cout<<"\t"<<participantes[i]->getNome()<<endl;
+        }
+        }else{
+            for(int i=0;i<quantidadeDeEquipes;i++){
+        cout<<"\t"<<i<<"o "<<participantes[i]->getNome()<<" "<<pontuacaofinal[i]<<endl;
+            }
+        }
 }

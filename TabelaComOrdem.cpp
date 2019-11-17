@@ -31,4 +31,15 @@ Equipe** TabelaComOrdem::getEquipesEmOrdem(){
 }
 
 void TabelaComOrdem::imprimir(){
+    if(!TemResultado){
+        for(int i=0;i<quantidadeDeEquipes;i++){
+            cout<<"\t"<<participantes[i]->getNome()<<endl;
+        }
+    }else{
+        for(int j=0;j<quantidadeDeEquipes;j++){
+            cout<<"\t"<<j<<"o "<<participantes[j]->getNome()<<endl;
+        }
+    }
+
 }
+
