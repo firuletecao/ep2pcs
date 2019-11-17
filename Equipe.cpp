@@ -2,7 +2,7 @@
 
 Equipe::Equipe()
 {
-    //ctor
+    //ctor PEDRAO TO AQUI
 }
 
 Equipe::~Equipe()
