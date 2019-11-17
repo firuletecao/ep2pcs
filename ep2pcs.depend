@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1573997835 source:c:\users\mth-nb\desktop\ghep2\ep2pcs\main.cpp
+	<iostream>
+
+1573998763 source:c:\users\mth-nb\desktop\ghep2\ep2pcs\equipe.cpp
+	"Equipe.h"
+
+1573998854 c:\users\mth-nb\desktop\ghep2\ep2pcs\equipe.h
+	<stdio.h>
+	<string>
+

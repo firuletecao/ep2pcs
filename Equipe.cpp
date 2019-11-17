@@ -1,11 +1,17 @@
 #include "Equipe.h"
 
-Equipe::Equipe()
+Equipe::Equipe(string nome)
 {
-    //ctor eU QUE TO AQUI MAT
+    this->nome= nome;
 }
 
 Equipe::~Equipe()
 {
-    //dtor
+}
+
+string Equipe::getNome(){
+    return nome;
+}
+
+void Equipe::imprimir(){
 }

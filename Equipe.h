@@ -1,16 +1,20 @@
 #ifndef EQUIPE_H
 #define EQUIPE_H
+#include<stdio.h>
+#include <string>
+
+using namespace std;
 
 
 class Equipe
 {
     public:
-        Equipe();
+        Equipe(string nome);
         virtual ~Equipe();
-
-    protected:
-
+        virtual string getNome();
+        virtual void imprimir();
     private:
+        string nome;
 };
 
 #endif // EQUIPE_H
