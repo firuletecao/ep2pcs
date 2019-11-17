@@ -34,6 +34,8 @@
 		</Compiler>
 		<Unit filename="Competicao.cpp" />
 		<Unit filename="Competicao.h" />
+		<Unit filename="CompeticaoMultimodalidades.cpp" />
+		<Unit filename="CompeticaoMultimodalidades.h" />
 		<Unit filename="CompeticaoSimples.cpp" />
 		<Unit filename="CompeticaoSimples.h" />
 		<Unit filename="Equipe.cpp" />

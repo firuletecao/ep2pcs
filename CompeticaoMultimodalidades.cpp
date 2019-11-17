@@ -1,11 +1,9 @@
 #include "CompeticaoMultimodalidades.h"
 
-CompeticaoMultimodalidades::CompeticaoMultimodalidades()
-{
-    //ctor
+CompeticaoMultimodalidades::CompeticaoMultimodalidades() {
+
 }
 
-CompeticaoMultimodalidades::~CompeticaoMultimodalidades()
-{
-    //dtor
+CompeticaoMultimodalidades::~CompeticaoMultimodalidades() {
+
 }

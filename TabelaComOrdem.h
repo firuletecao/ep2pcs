@@ -1,8 +1,6 @@
 #ifndef TABELACOMORDEM_H
 #define TABELACOMORDEM_H
-#include <string>
 #include <stdexcept>
-#include<stdio.h>
 #include "Equipe.h"
 #include "Tabela.h"
 

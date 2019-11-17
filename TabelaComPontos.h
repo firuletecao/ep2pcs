@@ -1,8 +1,6 @@
 #ifndef TABELACOMPONTOS_H
 #define TABELACOMPONTOS_H
-#include <string>
 #include <stdexcept>
-#include<stdio.h>
 #include "Equipe.h"
 #include "Tabela.h"
 
