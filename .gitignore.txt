@@ -1,0 +1,4 @@
+bin/
+obj/
+ep2pcs.depend
+ep2pcs.layout
