@@ -19,7 +19,6 @@ list<Modalidade*>* CompeticaoMultimodalidades::getModalidades() {
 
 Tabela* CompeticaoMultimodalidades::getTabela() {
     TabelaComPontos* tabelaAtualizada = new TabelaComPontos(equipesParticipantes, quantidadeDeEquipes);
-    TabelaComPontos* tabelaAtualizada = new TabelaComPontos [quantidadeDeModalidades];
 
     //O VETOR EQUIPESPARTICIPANTES TEM A ORDEM DAS EQUIPES CONFORME ENTRADA DO USUARIO
     //O VETOR PONTUACAO GUARDA CORRESPONDENTE A CADA COLOCACAO NA MODALIDADE
@@ -29,8 +28,8 @@ Tabela* CompeticaoMultimodalidades::getTabela() {
         if((*i)->temResultado()) {
             for(int j = 0; j < quantidadeDeEquipes; j++) {
                 for(int c = 0; c < quantidadeDeEquipes; c++) {
-                    if(ordem[c] == equipesParticipantes[j]) {
-                            tabelaAtualizada[j] = tabelaAtualizada[j] + getPontoPorPosicao(c);
+                    if((*i)->getTabela()->getEquipesEmOrdem()[c] == equipesParticipantes[j]) {
+                            tabelaAtualizada->pontuar(equipesParticipantes[j],pontuacao->at(c));
                     }
                 }
             }
@@ -89,7 +88,7 @@ int CompeticaoMultimodalidades::getPontoPorPosicao(int posicao) {
 void CompeticaoMultimodalidades::imprimir() {
     cout << nome << endl;
     for(int i = 0; i < quantidadeDeEquipes; i++){
-        cout << "\t" << i + 1 << "o" <<
+        cout << "\t" << i + 1 << "o" << endl;
 
     }
 }

@@ -1,7 +1,7 @@
 #include "PersistenciaDeCompeticao.h"
-#include"Equipe.h"
-#include"Competicao.h"
-#include"Modalidade.h"
+#include "Equipe.h"
+#include "Competicao.h"
+#include "Modalidade.h"
 
 
 using namespace std;

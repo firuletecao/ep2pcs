@@ -3,6 +3,7 @@
 #include "Modalidade.h"
 #include "Competicao.h"
 #include "Tabela.h"
+#include "PersistenciaDeCompeticao.h"
 
 using namespace std;
 

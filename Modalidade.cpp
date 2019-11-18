@@ -48,8 +48,9 @@ bool Modalidade::temResultado() {
 
 TabelaComOrdem* Modalidade::getTabela() {
     /*nao tenho certeza se precisa do if*/
-        if(existeResultado==1){
-            tabelaModalidade= new TabelaComOrdem(resultado, quantidadeDeEquipes);
+        if(existeResultado == 1){
+            tabelaModalidade = new TabelaComOrdem (resultado, quantidadeDeEquipes);
+            tabelaModalidade->setResultado(resultado);
             return tabelaModalidade;
         }
         throw new logic_error("ainda nao existe resultado");

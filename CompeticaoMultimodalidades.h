@@ -1,5 +1,6 @@
 #ifndef COMPETICAOMULTIMODALIDADES_H
 #define COMPETICAOMULTIMODALIDADES_H
+
 #include "Equipe.h"
 #include "Modalidade.h"
 #include "Competicao.h"

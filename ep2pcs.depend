@@ -59,27 +59,29 @@
 	"Tabela.h"
 	"Equipe.h"
 
-1574083508 source:c:\users\pedro\onedrive\햞ea de trabalho\ep2pcs\ep2pcs\competicaomultimodalidades.cpp
+1574104622 source:c:\users\pedro\onedrive\햞ea de trabalho\ep2pcs\ep2pcs\competicaomultimodalidades.cpp
 	"TabelaComOrdem.h"
 	"CompeticaoMultimodalidades.h"
 
-1574083271 c:\users\pedro\onedrive\햞ea de trabalho\ep2pcs\ep2pcs\competicaomultimodalidades.h
+1574103229 c:\users\pedro\onedrive\햞ea de trabalho\ep2pcs\ep2pcs\competicaomultimodalidades.h
 	"Equipe.h"
 	"Modalidade.h"
 	"Competicao.h"
 	"TabelaComOrdem.h"
+	"TabelaComPontos.h"
 	<list>
 	<vector>
 
 1574018063 source:c:\users\pedro\onedrive\햞ea de trabalho\ep2pcs\ep2pcs\equipe.cpp
 	"Equipe.h"
 
-1574083942 source:c:\users\pedro\onedrive\햞ea de trabalho\ep2pcs\ep2pcs\main.cpp
+1574102934 source:c:\users\pedro\onedrive\햞ea de trabalho\ep2pcs\ep2pcs\main.cpp
 	<iostream>
 	"Equipe.h"
 	"Modalidade.h"
 	"Competicao.h"
 	"Tabela.h"
+	"PersistenciaDeCompeticao.h"
 
 1574018615 source:c:\users\pedro\onedrive\햞ea de trabalho\ep2pcs\ep2pcs\competicaosimples.cpp
 	"CompeticaoSimples.h"
@@ -141,6 +143,20 @@
 1574012125 source:c:\users\mth-nb\desktop\ghep2\ep2pcs\modalidade.cpp
 	"Modalidade.h"
 
-1574018063 source:c:\users\pedro\onedrive\햞ea de trabalho\ep2pcs\ep2pcs\modalidade.cpp
+1574104415 source:c:\users\pedro\onedrive\햞ea de trabalho\ep2pcs\ep2pcs\modalidade.cpp
+	"Modalidade.h"
+
+1574102934 c:\users\pedro\onedrive\햞ea de trabalho\ep2pcs\ep2pcs\persistenciadecompeticao.h
+	"Competicao.h"
+	"Equipe.h"
+	<fstream>
+	"Modalidade.h"
+	"CompeticaoSimples.h"
+	"CompeticaoMultimodalidades.h"
+
+1574102934 source:c:\users\pedro\onedrive\햞ea de trabalho\ep2pcs\ep2pcs\persistenciadecompeticao.cpp
+	"PersistenciaDeCompeticao.h"
+	"Equipe.h"
+	"Competicao.h"
 	"Modalidade.h"
 
