@@ -53,17 +53,29 @@ int TabelaComPontos::getPosicao(Equipe* participante){
 }
 Equipe** TabelaComPontos::getEquipesEmOrdem(){ //RETORNA AS EQUIPES EM ORDEM DE PONTUACAO
     int k;
+    int *pontuacaobackup;
+    pontuacaobackup = new int[quantidadeDeEquipes];
+        for(int i=0;i<quantidadeDeEquipes;i++){
+        pontuacaobackup[i]=pontuacao[i];
+    }
     for(int j=0; j<quantidadeDeEquipes; j++){
             k=0;
         for(int i=1; i<quantidadeDeEquipes;i++){
             if(pontuacao[k]<pontuacao[i]) k=i;
         }
-        ordenado[j]=participantes[k];
-        pontuacaofinal[j]=pontuacao[k];
-        pontuacao[k]=-1;
+
+        ordenado[j] = participantes[k];
+        pontuacaofinal[j] = pontuacao[k];
+        pontuacao[k] = -1;
+
         /*isso vai dar problema se ele quiser chamar alguma coisa que depende de participantes depois de chamar essa funcao*/
     }
-    existeResultado=1;
+
+    existeResultado = 1;
+    for(int i=0;i<quantidadeDeEquipes;i++){
+    pontuacao[i] = pontuacaobackup[i];
+    }
+
     return ordenado;
 }
 void TabelaComPontos::imprimir(){

@@ -21,15 +21,25 @@ int main()
     Modalidade* modalidade;
     Modalidade** modalidades;
     Competicao* competicao;
+    PersistenciaDeCompeticao* arquivo = new PersistenciaDeCompeticao();
 
     cout << "Deseja carregar uma competicao (s/n)?" << endl;
     cin >> resposta;
 
     if(resposta == 's') {
-
         cout << "Digite o nome do arquivo: " << endl;
-        //ENTRA COM O NOME E CHAMADA DO METODO IMPRIMIR DA COMPETICAO
+        cin >> nomeDoArquivo;
 
+        competicao = arquivo->carregar(nomeDoArquivo);
+
+        CompeticaoSimples *carregadaSimples = dynamic_cast<CompeticaoSimples*>(competicao);
+
+        if(carregadaSimples == nullptr) {
+            CompeticaoMultimodalidades *carregadaMultimodalidades = dynamic_cast<CompeticaoMultimodalidades*>(competicao);
+            carregadaMultimodalidades->imprimir();
+        }
+
+        carregadaSimples->imprimir();
     }
     if(resposta == 'n') {
 
@@ -52,10 +62,13 @@ int main()
         cin >> resposta;
 
             if(resposta == 's'){
+
                 cout << "Informe o nome da modalidade: " << endl;
                 cin >> nomeDaModalidade;
 
                 modalidade = new Modalidade (nomeDaModalidade, equipes, n);
+
+                CompeticaoSimples* compSimples = new CompeticaoSimples(nomeDaCompeticao, equipes, n, modalidade);
 
                 cout << "Tem resultado (s/n)? " << endl;
                 cin >> resposta;
@@ -66,9 +79,13 @@ int main()
 
                         for(int i = 0; i < n; i++){
                             cout << "Informe a equipe " << i + 1 << "a colocada: " << endl;
-                            cin >> posicaoDaEquipe;
+                            cin >> nomeDaEquipe;
 
-                            equipesOrdenadas[i] = equipes[posicaoDaEquipe - 1];
+                            for(int j = 0; j < n; j++){
+                                if(equipes[j]->getNome() == nomeDaEquipe){
+                                    equipesOrdenadas[i] = equipes[j];
+                                }
+                            }
 
                         }
 
@@ -80,10 +97,12 @@ int main()
                         if(resposta == 's'){
                             cout << "Digite o nome do arquivo: " << endl;
                             cin >> nomeDoArquivo;
-                            //CHAMADA DO METODO IMPRIMIR DA COMPETICAO SIMPLES
+
+                            arquivo->salvar(nomeDoArquivo, compSimples);
+                            compSimples->imprimir();
                         }
                         if(resposta == 'n'){
-                            //CHAMADA O METODO IMPRIMIR DA COMPETICAO SIMPLES
+                            compSimples->imprimir();
                         }
                         delete equipesOrdenadas;
                     }
@@ -95,10 +114,12 @@ int main()
                         if(resposta == 's') {
                             cout << "Digite o nome do arquivo:" << endl;
                             cin >> nomeDoArquivo;
-                            //CHAMADA DO METODO IMPRIMIR DA COMPETICAO SIMPLES
+
+                            arquivo->salvar(nomeDoArquivo, competicao);
+                            competicao->imprimir();
                         }
                         if(resposta == 'n') {
-                            //CHAMADA DO METODO IMPRIMIR DA COMPETICAO SIMPLES
+                            competicao->imprimir();
                         }
                     }
             }
@@ -107,6 +128,7 @@ int main()
                 cin >> m;
 
                 Modalidade** modalidades = new Modalidade* [m];
+                CompeticaoMultimodalidades* compMultimodalidades = new CompeticaoMultimodalidades(nomeDaCompeticao, equipes, n);
 
                 for(int i = 0; i < m; i++){
                     cout << "Informe o nome da modalidade " << i + 1 << endl;
@@ -137,12 +159,15 @@ int main()
                 cin >> resposta;
 
                 if(resposta == 's') {
+
                     cout << "Digite o nome do arquivo: " << endl;
                     cin >> nomeDoArquivo;
-                    //CHAMADA DO METODO IMPRIMIR DA COMPETICAO
+
+                    arquivo->salvar(nomeDoArquivo, compMultimodalidades);
+                    compMultimodalidades->imprimir();
                 }
                 if(resposta == 'n') {
-                    //CHAMADA DO METODO IMPRIMIR DA COMPETICAO
+                    compMultimodalidades->imprimir();
                 }
             }
     }

@@ -87,8 +87,18 @@ int CompeticaoMultimodalidades::getPontoPorPosicao(int posicao) {
 
 void CompeticaoMultimodalidades::imprimir() {
     cout << nome << endl;
-    for(int i = 0; i < quantidadeDeEquipes; i++){
-        cout << "\t" << i + 1 << "o" << endl;
 
+    Tabela* tabelaParaImprimi=getTabela();
+
+    TabelaComPontos* tabelaParaImprimir = dynamic_cast<TabelaComPontos*>(tabelaParaImprimi);
+
+    list<Modalidade*>::iterator i;
+
+    for( i = listaDeModalidades->begin(); i != listaDeModalidades->end(); i++) {
+
+                for(int c = 0; c < quantidadeDeEquipes; c++) {
+                    cout << "\t" << c + 1 << "o " << tabelaParaImprimir->getEquipesEmOrdem()[c]->getNome() << "(" << tabelaParaImprimir->getPontos(tabelaParaImprimir->getEquipesEmOrdem()[c]) << ")" << endl;
+
+                }
     }
 }

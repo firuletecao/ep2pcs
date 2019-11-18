@@ -43,7 +43,7 @@
 	<iostream>
 	<string>
 
-1574083271 source:c:\users\pedro\onedrive\햞ea de trabalho\ep2pcs\ep2pcs\tabelacompontos.cpp
+1574110707 source:c:\users\pedro\onedrive\햞ea de trabalho\ep2pcs\ep2pcs\tabelacompontos.cpp
 	"TabelaComPontos.h"
 
 1574013851 c:\users\pedro\onedrive\햞ea de trabalho\ep2pcs\ep2pcs\tabelacompontos.h
@@ -59,11 +59,11 @@
 	"Tabela.h"
 	"Equipe.h"
 
-1574104622 source:c:\users\pedro\onedrive\햞ea de trabalho\ep2pcs\ep2pcs\competicaomultimodalidades.cpp
+1574111249 source:c:\users\pedro\onedrive\햞ea de trabalho\ep2pcs\ep2pcs\competicaomultimodalidades.cpp
 	"TabelaComOrdem.h"
 	"CompeticaoMultimodalidades.h"
 
-1574103229 c:\users\pedro\onedrive\햞ea de trabalho\ep2pcs\ep2pcs\competicaomultimodalidades.h
+1574107755 c:\users\pedro\onedrive\햞ea de trabalho\ep2pcs\ep2pcs\competicaomultimodalidades.h
 	"Equipe.h"
 	"Modalidade.h"
 	"Competicao.h"
@@ -75,7 +75,7 @@
 1574018063 source:c:\users\pedro\onedrive\햞ea de trabalho\ep2pcs\ep2pcs\equipe.cpp
 	"Equipe.h"
 
-1574102934 source:c:\users\pedro\onedrive\햞ea de trabalho\ep2pcs\ep2pcs\main.cpp
+1574107787 source:c:\users\pedro\onedrive\햞ea de trabalho\ep2pcs\ep2pcs\main.cpp
 	<iostream>
 	"Equipe.h"
 	"Modalidade.h"
