@@ -1,5 +1,6 @@
 #include "Modalidade.h"
 
+
 Modalidade::Modalidade(string nome, Equipe** participantes, int quantidade) {
     this->nome = nome;
     quantidadeDeEquipes = quantidade;

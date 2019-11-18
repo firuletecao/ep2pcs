@@ -37,7 +37,7 @@ void TabelaComOrdem::imprimir(){
         }
     }else{
         for(int j=0;j<quantidadeDeEquipes;j++){
-            cout<<"\t"<<j<<"o "<<participantes[j]->getNome()<<endl;
+            cout<<"\t"<<j<<"o "<<ordem[j]->getNome()<<endl;
         }
     }
 

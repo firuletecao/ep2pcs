@@ -1,19 +1,22 @@
 #include "Tabela.h"
 
-Tabela::Tabela(Equipe** participantes, int quantidade)
-{
-    if(quantidade<2){
-        throw new invalid_argument("aaa");
+Tabela::Tabela(Equipe** participantes, int quantidade) {
+    if(quantidade < 2) {
+        throw new invalid_argument("Nao ha equipes suficientes.");
     }
-    participantes= new Equipe* [quantidade];
-    this->participantes=participantes;
-    quantidadeDeEquipes=quantidade;
+
+    quantidadeDeEquipes = quantidade;
+    participantes = new Equipe* [quantidade];
+
+    for(int i = 0; i < quantidadeDeEquipes; i++){
+        this->participantes[i] = participantes[i];
+    }
 
 }
 
 Tabela::~Tabela(){}
 
- int Tabela::getQuantidadeDeEquipes(){
+ int Tabela::getQuantidadeDeEquipes() {
      return quantidadeDeEquipes;
  }
 

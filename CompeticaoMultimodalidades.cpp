@@ -1,8 +1,8 @@
+#include "TabelaComOrdem.h"
 #include "CompeticaoMultimodalidades.h"
 
 CompeticaoMultimodalidades::CompeticaoMultimodalidades(string nome, Equipe** equipes, int quantidade): Competicao(nome, equipes, quantidade) {
     listaDeModalidades = new list<Modalidade*>();
-
 }
 
 CompeticaoMultimodalidades::~CompeticaoMultimodalidades() {
@@ -18,7 +18,27 @@ list<Modalidade*>* CompeticaoMultimodalidades::getModalidades() {
 }
 
 Tabela* CompeticaoMultimodalidades::getTabela() {
+    TabelaComPontos* tabelaAtualizada = new TabelaComPontos(equipesParticipantes, quantidadeDeEquipes);
+    TabelaComPontos* tabelaAtualizada = new TabelaComPontos [quantidadeDeModalidades];
 
+    //O VETOR EQUIPESPARTICIPANTES TEM A ORDEM DAS EQUIPES CONFORME ENTRADA DO USUARIO
+    //O VETOR PONTUACAO GUARDA CORRESPONDENTE A CADA COLOCACAO NA MODALIDADE
+
+    list<Modalidade*>::iterator i;
+    for( i = listaDeModalidades->begin(); i != listaDeModalidades->end(); i++) {
+        if((*i)->temResultado()) {
+            for(int j = 0; j < quantidadeDeEquipes; j++) {
+                for(int c = 0; c < quantidadeDeEquipes; c++) {
+                    if(ordem[c] == equipesParticipantes[j]) {
+                            tabelaAtualizada[j] = tabelaAtualizada[j] + getPontoPorPosicao(c);
+                    }
+                }
+            }
+        }
+    }
+
+
+    return tabelaAtualizada;
 }
 
 vector<int>* CompeticaoMultimodalidades::pontuacao = new vector<int>({13,10,8,7,5,4,3,2,1});
@@ -67,5 +87,9 @@ int CompeticaoMultimodalidades::getPontoPorPosicao(int posicao) {
 }
 
 void CompeticaoMultimodalidades::imprimir() {
+    cout << nome << endl;
+    for(int i = 0; i < quantidadeDeEquipes; i++){
+        cout << "\t" << i + 1 << "o" <<
 
+    }
 }

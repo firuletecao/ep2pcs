@@ -42,6 +42,8 @@
 		<Unit filename="Equipe.h" />
 		<Unit filename="Modalidade.cpp" />
 		<Unit filename="Modalidade.h" />
+		<Unit filename="PersistenciaDeCompeticao.cpp" />
+		<Unit filename="PersistenciaDeCompeticao.h" />
 		<Unit filename="Tabela.cpp" />
 		<Unit filename="Tabela.h" />
 		<Unit filename="TabelaComOrdem.cpp" />

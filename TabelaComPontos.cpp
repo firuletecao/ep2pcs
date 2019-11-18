@@ -51,7 +51,7 @@ int TabelaComPontos::getPosicao(Equipe* participante){
     return j;
 
 }
-Equipe** TabelaComPontos::getEquipesEmOrdem(){
+Equipe** TabelaComPontos::getEquipesEmOrdem(){ //RETORNA AS EQUIPES EM ORDEM DE PONTUACAO
     int k;
     for(int j=0; j<quantidadeDeEquipes; j++){
             k=0;

@@ -1,5 +1,6 @@
 #include "CompeticaoSimples.h"
 
+
 CompeticaoSimples::CompeticaoSimples(string nome, Equipe** equipes, int quantidade, Modalidade* m) : Competicao(nome, equipes, quantidade) {
     modalidade = m;
 }
@@ -17,5 +18,8 @@ Tabela* CompeticaoSimples::getTabela() {
 }
 
 void CompeticaoSimples::imprimir() {
-    cout << nome << "\n" << modalidade->imprimir() << endl;
+
+    cout << nome << "\n" << endl;
+    modalidade->imprimir();
 }
+

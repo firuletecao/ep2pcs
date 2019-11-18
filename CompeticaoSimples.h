@@ -3,6 +3,7 @@
 #include "Equipe.h"
 #include "Modalidade.h"
 #include "Competicao.h"
+#include "Tabela.h"
 
 using namespace std;
 

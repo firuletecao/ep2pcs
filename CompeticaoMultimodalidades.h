@@ -3,6 +3,8 @@
 #include "Equipe.h"
 #include "Modalidade.h"
 #include "Competicao.h"
+#include "TabelaComOrdem.h"
+#include "TabelaComPontos.h"
 #include <list>
 #include <vector>
 
@@ -23,7 +25,6 @@ class CompeticaoMultimodalidades: public Competicao {
 
     private:
         int quantidadeDeModalidades;
-        int posicaoEquipe;
         string nome;
         Equipe** equipesParticipantes;
         list<Modalidade*>* listaDeModalidades;
