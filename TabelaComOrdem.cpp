@@ -31,14 +31,13 @@ Equipe** TabelaComOrdem::getEquipesEmOrdem(){
 }
 
 void TabelaComOrdem::imprimir(){
-    cout<<"estamos aqui"<<endl;
     if(TemResultado==0){
         for(int i=0;i<quantidadeDeEquipes;i++){
             cout<<"\t"<<participantes[i]->getNome()<<endl;
         }
     }else{
         for(int j=0;j<quantidadeDeEquipes;j++){
-            cout<<"\t"<<j<<"o "<<participantes[j]->getNome()<<endl;
+            cout<<"\t"<<j+1<<"o "<<participantes[j]->getNome()<<endl;
         }
     }
 
