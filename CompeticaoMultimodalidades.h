@@ -26,7 +26,6 @@ class CompeticaoMultimodalidades: public Competicao {
     private:
         int quantidadeDeModalidades;
         string nome;
-        Equipe** equipesParticipantes;
         list<Modalidade*>* listaDeModalidades;
         static vector<int>* pontuacao;
 };

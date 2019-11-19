@@ -14,5 +14,5 @@ string Equipe::getNome(){
 }
 
 void Equipe::imprimir(){
-    cout<<"Equipe "<<nome<<endl;
+    cout<<"Equipe: "<<nome<<endl;
 }

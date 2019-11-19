@@ -3,6 +3,9 @@
 
 CompeticaoMultimodalidades::CompeticaoMultimodalidades(string nome, Equipe** equipes, int quantidade): Competicao(nome, equipes, quantidade) {
     listaDeModalidades = new list<Modalidade*>();
+    //for(int i=0;i<quantidade;i++){
+     //   equipesParticipantes[i]->imprimir();
+    //}
 }
 
 CompeticaoMultimodalidades::~CompeticaoMultimodalidades() {
@@ -22,17 +25,15 @@ Tabela* CompeticaoMultimodalidades::getTabela() {
 
     //O VETOR EQUIPESPARTICIPANTES TEM A ORDEM DAS EQUIPES CONFORME ENTRADA DO USUARIO
     //O VETOR PONTUACAO GUARDA CORRESPONDENTE A CADA COLOCACAO NA MODALIDADE
-
+    int j;
     list<Modalidade*>::iterator i;
 
     for( i = listaDeModalidades->begin(); i != listaDeModalidades->end(); i++) {
         if((*i)->temResultado()) {
-            for(int j = 0; j < quantidadeDeEquipes; j++) {
+            for(j = 0; j < quantidadeDeEquipes; j++) {
                 for(int c = 0; c < quantidadeDeEquipes; c++) {
                             (*i)->getTabela();
-                            cout<<"pont"<<endl;
                     if((*i)->getTabela()->getEquipesEmOrdem()[c] == equipesParticipantes[j]) {
-                            cout<<"t"<<endl;
                             tabelaAtualizada->pontuar(equipesParticipantes[j],pontuacao->at(c));
 
                     }
@@ -95,11 +96,7 @@ void CompeticaoMultimodalidades::imprimir() {
     list<Modalidade*>::iterator i;
     for( i = listaDeModalidades->begin(); i != listaDeModalidades->end(); i++) {
                 for(int c = 0; c < quantidadeDeEquipes; c++) {
-                    cout << "\t" << c + 1 << "o " <<endl;
-                    cout<<"aaa"<<endl;
-                     cout<<tabelaParaImprimir->getEquipesEmOrdem()[c]->getNome()<<endl;
-                      cout<<"bbb"<<endl;
-                      cout<<"(" << tabelaParaImprimir->getPontos(tabelaParaImprimir->getEquipesEmOrdem()[c]) << ")" << endl;
+                    cout << "\t" << c + 1 << "o " <<tabelaParaImprimir->getEquipesEmOrdem()[c]->getNome()<<"(" << tabelaParaImprimir->getPontos(tabelaParaImprimir->getEquipesEmOrdem()[c]) << ")" << endl;
                 }
     }
 }

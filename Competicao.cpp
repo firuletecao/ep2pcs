@@ -6,12 +6,11 @@ Competicao::Competicao(string nome, Equipe** equipes, int quantidade) {
 
     if(quantidadeDeEquipes < 2) throw new invalid_argument("Nao ha equipes suficientes");
 
-    equipesParticipantes = new Equipe* [quantidadeDeEquipes];
+    this->equipesParticipantes = new Equipe* [quantidade];
 
     for(int i = 0; i < quantidadeDeEquipes; i++) {
         equipesParticipantes[i] = equipes[i];
     }
-
 }
 
 Competicao::~Competicao() {

@@ -22,12 +22,16 @@ int TabelaComPontos::getPontos(Equipe* participante){
     throw new invalid_argument("a equipe que voce esta tentando conseguir os pontos nao faz parte da tabela");
 }
 void TabelaComPontos::pontuar(Equipe* participante, int pontos){
+        int pontuou=0;
         for(int i=0; i<quantidadeDeEquipes; i++){
             if(participantes[i]==participante){
+                    pontuou=1;
                 pontuacao[i]=pontuacao[i]+pontos;
             }
         }
-        throw new invalid_argument("A equipe que voce esta tetando pontuar nao faz parte");
+        if(pontuou==0){
+            throw new invalid_argument("A equipe que voce esta tetando pontuar nao faz parte");
+        }
 }
 int TabelaComPontos::getPosicao(Equipe* participante){
     int j=1, l=0, posicaoDoParticipante;
