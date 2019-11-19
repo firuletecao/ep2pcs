@@ -59,7 +59,6 @@ TabelaComOrdem* Modalidade::getTabela() {
 }
 
 void Modalidade::imprimir() {
-    cout << "Modalidade:" << nome << endl;
     getTabela();
     tabelaModalidade->imprimir();
 }

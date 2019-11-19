@@ -94,10 +94,8 @@ void CompeticaoMultimodalidades::imprimir() {
     Tabela* tabelaParaImprimi=getTabela();
     TabelaComPontos* tabelaParaImprimir = dynamic_cast<TabelaComPontos*>(tabelaParaImprimi);
     list<Modalidade*>::iterator i;
-    for( i = listaDeModalidades->begin(); i != listaDeModalidades->end(); i++) {
                 for(int c = 0; c < quantidadeDeEquipes; c++) {
-                    cout << "\t" << c + 1 << "o " <<tabelaParaImprimir->getEquipesEmOrdem()[c]->getNome()<<"(" << tabelaParaImprimir->getPontos(tabelaParaImprimir->getEquipesEmOrdem()[c]) << ")" << endl;
+                    cout << "\t" << c + 1 << "o " <<tabelaParaImprimir->getEquipesEmOrdem()[c]->getNome()<<"(" << tabelaParaImprimir->getPontos(tabelaParaImprimir->getEquipesEmOrdem()[c]) << ")"<<"pontos" << endl;
                 }
-    }
 }
 

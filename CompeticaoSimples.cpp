@@ -19,7 +19,7 @@ Tabela* CompeticaoSimples::getTabela() {
 
 void CompeticaoSimples::imprimir() {
 
-    cout <<"Competicao: "<< nome << "\n" << endl;
+    cout << nome << endl;
     modalidade->imprimir();
 }
 
