@@ -16,6 +16,8 @@ Modalidade::Modalidade(string nome, Equipe** participantes, int quantidade) {
     for(int i = 0; i < quantidadeDeEquipes; i++){
         equipes[i] = participantes[i];
     }
+
+    tabelaModalidade = new TabelaComOrdem(equipes, quantidadeDeEquipes);
 }
 
 Modalidade::~Modalidade() {}
@@ -32,13 +34,12 @@ int Modalidade::getQuantidadeDeEquipes() {
 }
 
 void Modalidade::setResultado(Equipe** ordem) {
-
-
     for(int i = 0; i < quantidadeDeEquipes; i++){
         //RESULTADO[0] EH A CAMPEA, RESULTADO[1] EH A SEGUNDA COLOCADA...
         resultado[i] = ordem[i];
     }
     //CONTABILIZANDO QUE SETRESULTADO JA FOI CHAMADO UMA OU MAIS VEZES
+    tabelaModalidade->setResultado(resultado);
     existeResultado = 1;
 }
 
@@ -49,13 +50,7 @@ bool Modalidade::temResultado() {
 }
 
 TabelaComOrdem* Modalidade::getTabela() {
-
-        if(existeResultado == 1){
-            tabelaModalidade = new TabelaComOrdem(resultado, quantidadeDeEquipes);
-            tabelaModalidade->setResultado(resultado);
-            return tabelaModalidade;
-        }
-        throw new logic_error("ainda nao existe resultado");
+    return tabelaModalidade;
 }
 
 void Modalidade::imprimir() {

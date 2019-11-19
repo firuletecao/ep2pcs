@@ -115,11 +115,11 @@ int main()
                             cout << "Digite o nome do arquivo:" << endl;
                             cin >> nomeDoArquivo;
 
-                            arquivo->salvar(nomeDoArquivo, competicao);
-                            competicao->imprimir();
+                            arquivo->salvar(nomeDoArquivo, compSimples);
+                            compSimples->imprimir();
                         }
                         if(resposta == 'n') {
-                            competicao->imprimir();
+                            compSimples->imprimir();
                         }
                     }
             }

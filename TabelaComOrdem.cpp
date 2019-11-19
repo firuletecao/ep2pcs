@@ -1,6 +1,8 @@
 #include "TabelaComOrdem.h"
 
-TabelaComOrdem::TabelaComOrdem(Equipe** participantes, int quantidade):Tabela(participantes, quantidade){}
+TabelaComOrdem::TabelaComOrdem(Equipe** participantes, int quantidade):Tabela(participantes, quantidade){
+TemResultado=0;
+}
 
 TabelaComOrdem::~TabelaComOrdem(){}
 
@@ -30,7 +32,7 @@ Equipe** TabelaComOrdem::getEquipesEmOrdem(){
 }
 
 void TabelaComOrdem::imprimir(){
-    if(TemResultado==0){
+    if(TemResultado== 0){
         for(int i=0;i<quantidadeDeEquipes;i++){
             cout<<"\t"<<participantes[i]->getNome()<<endl;
         }
