@@ -9,7 +9,7 @@ Tabela::Tabela(Equipe** participantes, int quantidade) {
     }
 
     quantidadeDeEquipes = quantidade;
-    participantes = new Equipe* [quantidade];
+    this->participantes = new Equipe* [quantidade];
 
     for(int i = 0; i < quantidadeDeEquipes; i++){
         this->participantes[i] = participantes[i];

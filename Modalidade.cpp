@@ -3,6 +3,7 @@
 
 Modalidade::Modalidade(string nome, Equipe** participantes, int quantidade) {
     this->nome = nome;
+    temTabela=false;
     quantidadeDeEquipes = quantidade;
     resultado = new Equipe* [quantidadeDeEquipes];
     existeResultado = 0;
@@ -42,13 +43,13 @@ void Modalidade::setResultado(Equipe** ordem) {
 }
 
 bool Modalidade::temResultado() {
-    if(existeResultado = 1) {
+    if(existeResultado == 1) {
         return true;
     } else return false;
 }
 
 TabelaComOrdem* Modalidade::getTabela() {
-    /*nao tenho certeza se precisa do if*/
+
         if(existeResultado == 1){
             tabelaModalidade = new TabelaComOrdem(resultado, quantidadeDeEquipes);
             tabelaModalidade->setResultado(resultado);

@@ -24,28 +24,22 @@ Tabela* CompeticaoMultimodalidades::getTabela() {
     //O VETOR PONTUACAO GUARDA CORRESPONDENTE A CADA COLOCACAO NA MODALIDADE
 
     list<Modalidade*>::iterator i;
-                                cout<<"aa"<<endl;
+
     for( i = listaDeModalidades->begin(); i != listaDeModalidades->end(); i++) {
-                                        cout<<"bb"<<endl;
         if((*i)->temResultado()) {
-                                        cout<<"cc"<<endl;
             for(int j = 0; j < quantidadeDeEquipes; j++) {
-                                            cout<<"dd"<<endl;
                 for(int c = 0; c < quantidadeDeEquipes; c++) {
                             (*i)->getTabela();
-                                                cout<<"ee"<<endl;
-
+                            cout<<"pont"<<endl;
                     if((*i)->getTabela()->getEquipesEmOrdem()[c] == equipesParticipantes[j]) {
-                                                    cout<<"ff"<<endl;
+                            cout<<"t"<<endl;
                             tabelaAtualizada->pontuar(equipesParticipantes[j],pontuacao->at(c));
-                            cout<<"gg"<<endl;
+
                     }
                 }
             }
         }
     }
-
-    cout<<"PP"<<endl;
     return tabelaAtualizada;
 }
 
@@ -96,18 +90,15 @@ int CompeticaoMultimodalidades::getPontoPorPosicao(int posicao) {
 
 void CompeticaoMultimodalidades::imprimir() {
     cout << nome << endl;
-
     Tabela* tabelaParaImprimi=getTabela();
-                cout<<"F"<<endl;
     TabelaComPontos* tabelaParaImprimir = dynamic_cast<TabelaComPontos*>(tabelaParaImprimi);
-            cout<<"A"<<endl;
     list<Modalidade*>::iterator i;
-            cout<<"B"<<endl;
     for( i = listaDeModalidades->begin(); i != listaDeModalidades->end(); i++) {
-            cout<<"C"<<endl;
                 for(int c = 0; c < quantidadeDeEquipes; c++) {
                     cout << "\t" << c + 1 << "o " <<endl;
+                    cout<<"aaa"<<endl;
                      cout<<tabelaParaImprimir->getEquipesEmOrdem()[c]->getNome()<<endl;
+                      cout<<"bbb"<<endl;
                       cout<<"(" << tabelaParaImprimir->getPontos(tabelaParaImprimir->getEquipesEmOrdem()[c]) << ")" << endl;
                 }
     }

@@ -23,6 +23,7 @@ class Modalidade {
         virtual void imprimir();
 
     private:
+        bool temTabela;
         Equipe** equipes;
         Equipe** resultado;
         string nome;

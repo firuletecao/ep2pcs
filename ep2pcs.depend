@@ -14,7 +14,7 @@
 	<iostream>
 	<string>
 
-1574181657 source:c:\users\mth-nb\desktop\ghep2\ep2pcs\tabela.cpp
+1574187129 source:c:\users\mth-nb\desktop\ghep2\ep2pcs\tabela.cpp
 	"Tabela.h"
 	<string>
 	<iostream>
@@ -23,15 +23,15 @@
 	<stdexcept>
 	"Equipe.h"
 
-1574184011 source:c:\users\mth-nb\desktop\ghep2\ep2pcs\tabelacomordem.cpp
+1574186419 source:c:\users\mth-nb\desktop\ghep2\ep2pcs\tabelacomordem.cpp
 	"TabelaComOrdem.h"
 
-1574180856 c:\users\mth-nb\desktop\ghep2\ep2pcs\tabelacomordem.h
+1574186527 c:\users\mth-nb\desktop\ghep2\ep2pcs\tabelacomordem.h
 	<stdexcept>
 	"Equipe.h"
 	"Tabela.h"
 
-1574174325 source:c:\users\mth-nb\desktop\ghep2\ep2pcs\tabelacompontos.cpp
+1574188246 source:c:\users\mth-nb\desktop\ghep2\ep2pcs\tabelacompontos.cpp
 	"TabelaComPontos.h"
 
 1574083840 c:\users\mth-nb\desktop\ghep2\ep2pcs\tabelacompontos.h
@@ -120,7 +120,7 @@
 	"Tabela.h"
 	"Equipe.h"
 
-1574180265 source:c:\users\mth-nb\desktop\ghep2\ep2pcs\competicaomultimodalidades.cpp
+1574188704 source:c:\users\mth-nb\desktop\ghep2\ep2pcs\competicaomultimodalidades.cpp
 	"TabelaComOrdem.h"
 	"CompeticaoMultimodalidades.h"
 
@@ -133,7 +133,7 @@
 	<list>
 	<vector>
 
-1574182328 c:\users\mth-nb\desktop\ghep2\ep2pcs\modalidade.h
+1574186527 c:\users\mth-nb\desktop\ghep2\ep2pcs\modalidade.h
 	<stdexcept>
 	"TabelaComOrdem.h"
 	"Equipe.h"
@@ -161,7 +161,7 @@
 	"Competicao.h"
 	"Tabela.h"
 
-1574183565 source:c:\users\mth-nb\desktop\ghep2\ep2pcs\modalidade.cpp
+1574188505 source:c:\users\mth-nb\desktop\ghep2\ep2pcs\modalidade.cpp
 	"Modalidade.h"
 
 1574104415 source:c:\users\pedro\onedrive\Área de trabalho\ep2pcs\ep2pcs\modalidade.cpp

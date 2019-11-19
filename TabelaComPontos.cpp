@@ -61,7 +61,9 @@ Equipe** TabelaComPontos::getEquipesEmOrdem(){ //RETORNA AS EQUIPES EM ORDEM DE 
     for(int j=0; j<quantidadeDeEquipes; j++){
             k=0;
         for(int i=1; i<quantidadeDeEquipes;i++){
-            if(pontuacao[k]<pontuacao[i]) k=i;
+            if(pontuacao[k]<pontuacao[i]){
+                    k=i;
+            }
         }
 
         ordenado[j] = participantes[k];
