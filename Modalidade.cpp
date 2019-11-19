@@ -4,6 +4,7 @@
 Modalidade::Modalidade(string nome, Equipe** participantes, int quantidade) {
     this->nome = nome;
     quantidadeDeEquipes = quantidade;
+    resultado = new Equipe* [quantidadeDeEquipes];
     existeResultado = 0;
 
     if(quantidade < 2) {
@@ -30,7 +31,7 @@ int Modalidade::getQuantidadeDeEquipes() {
 }
 
 void Modalidade::setResultado(Equipe** ordem) {
-    resultado = new Equipe* [quantidadeDeEquipes];
+
 
     for(int i = 0; i < quantidadeDeEquipes; i++){
         //RESULTADO[0] EH A CAMPEA, RESULTADO[1] EH A SEGUNDA COLOCADA...
@@ -49,7 +50,7 @@ bool Modalidade::temResultado() {
 TabelaComOrdem* Modalidade::getTabela() {
     /*nao tenho certeza se precisa do if*/
         if(existeResultado == 1){
-            tabelaModalidade = new TabelaComOrdem (resultado, quantidadeDeEquipes);
+            tabelaModalidade = new TabelaComOrdem(resultado, quantidadeDeEquipes);
             tabelaModalidade->setResultado(resultado);
             return tabelaModalidade;
         }
@@ -58,5 +59,6 @@ TabelaComOrdem* Modalidade::getTabela() {
 
 void Modalidade::imprimir() {
     cout << "Modalidade:" << nome << endl;
+    getTabela();
     tabelaModalidade->imprimir();
 }

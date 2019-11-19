@@ -143,14 +143,20 @@ int main()
 
                         Equipe** equipesOrdenadas = new Equipe* [n];
 
-                        for(int i = 0; i < m; i++){
+                        for(int i = 0; i < n; i++){
                             cout << "Informe a equipe " << i + 1 << "a colocada: " << endl;
-                            cin >> posicaoDaEquipe;
+                            cin >> nomeDaEquipe;
 
-                            equipesOrdenadas[i] = equipes[posicaoDaEquipe - 1];
+                            for(int j = 0; j < n; j++){
+                                if(equipes[j]->getNome() == nomeDaEquipe){
+                                    equipesOrdenadas[i] = equipes[j];
+                                }
+                            }
+
                         }
 
                         modalidades[i]->setResultado(equipesOrdenadas);
+                        compMultimodalidades->adicionar(modalidades[i]);
                     }
 
                 }

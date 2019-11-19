@@ -1,6 +1,9 @@
 #include "Tabela.h"
+#include <string>
+#include <iostream>
 
 Tabela::Tabela(Equipe** participantes, int quantidade) {
+
     if(quantidade < 2) {
         throw new invalid_argument("Nao ha equipes suficientes.");
     }

@@ -19,7 +19,7 @@ class TabelaComOrdem:public Tabela
 
     private:
         Equipe** ordem;
-        bool TemResultado;
+        int TemResultado;
 };
 
 #endif // TABELACOMORDEM_H

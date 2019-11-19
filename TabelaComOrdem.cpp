@@ -9,11 +9,11 @@ void TabelaComOrdem::setResultado(Equipe** ordem){
     for(int i=0; i<quantidadeDeEquipes; i++){
         participantes[i]=ordem[i];
     }
-    TemResultado=true;
+    TemResultado=1;
 }
 
 int TabelaComOrdem::getPosicao(Equipe* participante){
-    if(TemResultado){
+    if(TemResultado==1){
       for(int i=0; i<quantidadeDeEquipes; i++){
             if(participantes[i]=participante){
                 return i;
@@ -24,20 +24,21 @@ int TabelaComOrdem::getPosicao(Equipe* participante){
     throw new logic_error("nao ha resultado ainda");
 }
 Equipe** TabelaComOrdem::getEquipesEmOrdem(){
-    if(TemResultado){
+    if(TemResultado==1){
         return participantes;
     }
     throw new logic_error("Um resultado ainda nao foi definido");
 }
 
 void TabelaComOrdem::imprimir(){
-    if(!TemResultado){
+    cout<<"estamos aqui"<<endl;
+    if(TemResultado==0){
         for(int i=0;i<quantidadeDeEquipes;i++){
             cout<<"\t"<<participantes[i]->getNome()<<endl;
         }
     }else{
         for(int j=0;j<quantidadeDeEquipes;j++){
-            cout<<"\t"<<j<<"o "<<ordem[j]->getNome()<<endl;
+            cout<<"\t"<<j<<"o "<<participantes[j]->getNome()<<endl;
         }
     }
 

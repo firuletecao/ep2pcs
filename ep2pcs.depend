@@ -1,33 +1,40 @@
 # depslib dependency file v1.0
-1574007850 source:c:\users\mth-nb\desktop\ghep2\ep2pcs\main.cpp
+1574179872 source:c:\users\mth-nb\desktop\ghep2\ep2pcs\main.cpp
 	<iostream>
+	"Equipe.h"
+	"Modalidade.h"
+	"Competicao.h"
+	"Tabela.h"
+	"PersistenciaDeCompeticao.h"
 
 1574011503 source:c:\users\mth-nb\desktop\ghep2\ep2pcs\equipe.cpp
 	"Equipe.h"
 
-1574011805 c:\users\mth-nb\desktop\ghep2\ep2pcs\equipe.h
+1574017492 c:\users\mth-nb\desktop\ghep2\ep2pcs\equipe.h
 	<iostream>
 	<string>
 
-1574007850 source:c:\users\mth-nb\desktop\ghep2\ep2pcs\tabela.cpp
+1574181657 source:c:\users\mth-nb\desktop\ghep2\ep2pcs\tabela.cpp
 	"Tabela.h"
+	<string>
+	<iostream>
 
 1574007850 c:\users\mth-nb\desktop\ghep2\ep2pcs\tabela.h
 	<stdexcept>
 	"Equipe.h"
 
-1574012557 source:c:\users\mth-nb\desktop\ghep2\ep2pcs\tabelacomordem.cpp
+1574184011 source:c:\users\mth-nb\desktop\ghep2\ep2pcs\tabelacomordem.cpp
 	"TabelaComOrdem.h"
 
-1574007850 c:\users\mth-nb\desktop\ghep2\ep2pcs\tabelacomordem.h
+1574180856 c:\users\mth-nb\desktop\ghep2\ep2pcs\tabelacomordem.h
 	<stdexcept>
 	"Equipe.h"
 	"Tabela.h"
 
-1574007850 source:c:\users\mth-nb\desktop\ghep2\ep2pcs\tabelacompontos.cpp
+1574174325 source:c:\users\mth-nb\desktop\ghep2\ep2pcs\tabelacompontos.cpp
 	"TabelaComPontos.h"
 
-1574007850 c:\users\mth-nb\desktop\ghep2\ep2pcs\tabelacompontos.h
+1574083840 c:\users\mth-nb\desktop\ghep2\ep2pcs\tabelacompontos.h
 	<stdexcept>
 	"Equipe.h"
 	"Tabela.h"
@@ -113,34 +120,48 @@
 	"Tabela.h"
 	"Equipe.h"
 
-1574007850 source:c:\users\mth-nb\desktop\ghep2\ep2pcs\competicaomultimodalidades.cpp
+1574180265 source:c:\users\mth-nb\desktop\ghep2\ep2pcs\competicaomultimodalidades.cpp
+	"TabelaComOrdem.h"
 	"CompeticaoMultimodalidades.h"
 
-1574007850 c:\users\mth-nb\desktop\ghep2\ep2pcs\competicaomultimodalidades.h
+1574174325 c:\users\mth-nb\desktop\ghep2\ep2pcs\competicaomultimodalidades.h
 	"Equipe.h"
 	"Modalidade.h"
 	"Competicao.h"
+	"TabelaComOrdem.h"
+	"TabelaComPontos.h"
+	<list>
+	<vector>
 
-1574008908 c:\users\mth-nb\desktop\ghep2\ep2pcs\modalidade.h
+1574182328 c:\users\mth-nb\desktop\ghep2\ep2pcs\modalidade.h
 	<stdexcept>
 	"TabelaComOrdem.h"
 	"Equipe.h"
 
-1574008560 source:c:\users\mth-nb\desktop\ghep2\ep2pcs\competicaosimples.cpp
+1574183700 source:c:\users\mth-nb\desktop\ghep2\ep2pcs\competicaosimples.cpp
 	"CompeticaoSimples.h"
 
-1574007980 source:c:\users\mth-nb\desktop\ghep2\ep2pcs\persistenciadecompeticao.cpp
+1574104808 source:c:\users\mth-nb\desktop\ghep2\ep2pcs\persistenciadecompeticao.cpp
 	"PersistenciaDeCompeticao.h"
-
-1574008099 c:\users\mth-nb\desktop\ghep2\ep2pcs\persistenciadecompeticao.h
+	"Equipe.h"
 	"Competicao.h"
+	"Modalidade.h"
 
-1574010165 c:\users\mth-nb\desktop\ghep2\ep2pcs\competicaosimples.h
+1574104808 c:\users\mth-nb\desktop\ghep2\ep2pcs\persistenciadecompeticao.h
+	"Competicao.h"
+	"Equipe.h"
+	<fstream>
+	"Modalidade.h"
+	"CompeticaoSimples.h"
+	"CompeticaoMultimodalidades.h"
+
+1574102951 c:\users\mth-nb\desktop\ghep2\ep2pcs\competicaosimples.h
 	"Equipe.h"
 	"Modalidade.h"
 	"Competicao.h"
+	"Tabela.h"
 
-1574012125 source:c:\users\mth-nb\desktop\ghep2\ep2pcs\modalidade.cpp
+1574183565 source:c:\users\mth-nb\desktop\ghep2\ep2pcs\modalidade.cpp
 	"Modalidade.h"
 
 1574104415 source:c:\users\pedro\onedrive\Área de trabalho\ep2pcs\ep2pcs\modalidade.cpp
