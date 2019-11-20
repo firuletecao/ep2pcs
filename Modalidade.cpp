@@ -21,6 +21,7 @@ Modalidade::Modalidade(string nome, Equipe** participantes, int quantidade) {
 }
 
 Modalidade::~Modalidade() {}
+
 string Modalidade::getNome() {
     return nome;
 }
@@ -43,7 +44,7 @@ void Modalidade::setResultado(Equipe** ordem) {
     existeResultado = 1;
 }
 
-bool Modalidade::temResultado() {
+bool Modalidade::temResultado() { // CHECA SE JA FOI DADO SETRESULTADO AO MENOS UMA VEZ
     if(existeResultado == 1) {
         return true;
     } else return false;

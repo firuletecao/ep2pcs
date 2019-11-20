@@ -3,9 +3,6 @@
 
 CompeticaoMultimodalidades::CompeticaoMultimodalidades(string nome, Equipe** equipes, int quantidade): Competicao(nome, equipes, quantidade) {
     listaDeModalidades = new list<Modalidade*>();
-    //for(int i=0;i<quantidade;i++){
-     //   equipesParticipantes[i]->imprimir();
-    //}
 }
 
 CompeticaoMultimodalidades::~CompeticaoMultimodalidades() {
@@ -25,14 +22,15 @@ Tabela* CompeticaoMultimodalidades::getTabela() {
 
     //O VETOR EQUIPESPARTICIPANTES TEM A ORDEM DAS EQUIPES CONFORME ENTRADA DO USUARIO
     //O VETOR PONTUACAO GUARDA CORRESPONDENTE A CADA COLOCACAO NA MODALIDADE
+    //TABELAATUALIZADA EH UMA TABELA QUE GUARDA OS PONTOS DAS EQUIPES NA ORDEM DE ENTRADA PELO USUARIO
+
     int j;
     list<Modalidade*>::iterator i;
 
-    for( i = listaDeModalidades->begin(); i != listaDeModalidades->end(); i++) {
+    for( i = listaDeModalidades->begin(); i != listaDeModalidades->end(); i++) { //VARRE A LISTA DO COMEÇO AO FIM
         if((*i)->temResultado()) {
             for(j = 0; j < quantidadeDeEquipes; j++) {
                 for(int c = 0; c < quantidadeDeEquipes; c++) {
-                            (*i)->getTabela();
                     if((*i)->getTabela()->getEquipesEmOrdem()[c] == equipesParticipantes[j]) {
                             tabelaAtualizada->pontuar(equipesParticipantes[j],pontuacao->at(c));
 
@@ -46,13 +44,13 @@ Tabela* CompeticaoMultimodalidades::getTabela() {
 
 vector<int>* CompeticaoMultimodalidades::pontuacao = new vector<int>({13,10,8,7,5,4,3,2,1});
 
-void CompeticaoMultimodalidades::setPontuacao(vector<int>* pontos) {
+void CompeticaoMultimodalidades::setPontuacao(vector<int>* pontos) { //ATUALIZA A PONTUACAO DE UMA DADA COMPETICAO
     for(int i = 0; i < 9; i++) {
         pontuacao->at(i) = pontos->at(i);
     }
 }
 
-int CompeticaoMultimodalidades::getPontoPorPosicao(int posicao) {
+int CompeticaoMultimodalidades::getPontoPorPosicao(int posicao) { //AQUI O SWITCH CASE ENGLOBA TODAS AS POSSIBILIDADES DE PONTUAR EM RELACAO A UMA DETERMINADA ORDEM
 
     switch (posicao)
     {
@@ -91,7 +89,7 @@ int CompeticaoMultimodalidades::getPontoPorPosicao(int posicao) {
 
 void CompeticaoMultimodalidades::imprimir() {
     cout << nome << endl;
-    Tabela* tabelaParaImprimi=getTabela();
+    Tabela* tabelaParaImprimi = getTabela();
     TabelaComPontos* tabelaParaImprimir = dynamic_cast<TabelaComPontos*>(tabelaParaImprimi);
     list<Modalidade*>::iterator i;
                 for(int c = 0; c < quantidadeDeEquipes; c++) {

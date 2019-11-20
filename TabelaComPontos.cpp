@@ -13,7 +13,7 @@ TabelaComPontos::TabelaComPontos(Equipe** participantes, int quantidade):Tabela(
 
 TabelaComPontos::~TabelaComPontos(){}
 
-int TabelaComPontos::getPontos(Equipe* participante){
+int TabelaComPontos::getPontos(Equipe* participante){ //RETORNA A PONTUACAO DE UMA EQUIPE DE ACORDO COM SUA POSICAO NO EQUIPE** PARTICIPANTES DA CLASSE TABELACOMPONTOS
     for(int i=0; i<quantidadeDeEquipes; i++){
         if(participantes[i]==participante){
             return pontuacao[i];
@@ -21,7 +21,7 @@ int TabelaComPontos::getPontos(Equipe* participante){
     }
     throw new invalid_argument("a equipe que voce esta tentando conseguir os pontos nao faz parte da tabela");
 }
-void TabelaComPontos::pontuar(Equipe* participante, int pontos){
+void TabelaComPontos::pontuar(Equipe* participante, int pontos){ //ADICIONA OS PONTOS CORRESPONDENTES A CADA EQUIPE CONFORME SUA POSICAO
         int pontuou=0;
         for(int i=0; i<quantidadeDeEquipes; i++){
             if(participantes[i]==participante){
@@ -33,7 +33,7 @@ void TabelaComPontos::pontuar(Equipe* participante, int pontos){
             throw new invalid_argument("A equipe que voce esta tetando pontuar nao faz parte");
         }
 }
-int TabelaComPontos::getPosicao(Equipe* participante){
+int TabelaComPontos::getPosicao(Equipe* participante){ //RETORNA A POSICAO DE UMA DADA EQUIPE
     int j=1, l=0, posicaoDoParticipante;
     for(int i=0;i<quantidadeDeEquipes;i++){
         if(participantes[i]==participante){
@@ -48,7 +48,6 @@ int TabelaComPontos::getPosicao(Equipe* participante){
         if(participante!=participantes[k]){
             if(pontuacao[posicaoDoParticipante]<pontuacao[k]){
                 j++;
-                /* eu acho que isso pode dar erro no futuro por causa que pra 2 pessoas iguais ele erra pros 2*/
             }
         }
     }
@@ -73,8 +72,6 @@ Equipe** TabelaComPontos::getEquipesEmOrdem(){ //RETORNA AS EQUIPES EM ORDEM DE 
         ordenado[j] = participantes[k];
         pontuacaofinal[j] = pontuacao[k];
         pontuacao[k] = -1;
-
-        /*isso vai dar problema se ele quiser chamar alguma coisa que depende de participantes depois de chamar essa funcao*/
     }
 
     existeResultado = 1;
@@ -85,11 +82,11 @@ Equipe** TabelaComPontos::getEquipesEmOrdem(){ //RETORNA AS EQUIPES EM ORDEM DE 
     return ordenado;
 }
 void TabelaComPontos::imprimir(){
-      if(!existeResultado){
+      if(!existeResultado){//CASO NAO TENHA RESULTADO
         for(int i=0;i<quantidadeDeEquipes;i++){
             cout<<"\t"<<participantes[i]->getNome()<<endl;
         }
-        }else{
+        }else{//CASO TENHA RESULTADO
             for(int i=0;i<quantidadeDeEquipes;i++){
         cout<<"\t"<<i<<"o "<<participantes[i]->getNome()<<" "<<pontuacaofinal[i]<<endl;
             }

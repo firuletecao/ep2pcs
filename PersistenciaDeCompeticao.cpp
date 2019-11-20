@@ -13,7 +13,7 @@ PersistenciaDeCompeticao::PersistenciaDeCompeticao()
 PersistenciaDeCompeticao::~PersistenciaDeCompeticao()
 {}
 
-Competicao* PersistenciaDeCompeticao::carregar(string arquivo){
+Competicao* PersistenciaDeCompeticao::carregar(string arquivo){ //CARREGA COMPETICOES ANTERIORES JA SALVAS PELO USUARIO
     ifstream input;
     input.open(arquivo);
     if (input.fail()){
@@ -105,7 +105,7 @@ Competicao* PersistenciaDeCompeticao::carregar(string arquivo){
 }
 }
 
-void PersistenciaDeCompeticao::salvar(string arquivo, Competicao *c){
+void PersistenciaDeCompeticao::salvar(string arquivo, Competicao *c){ //SALVA UMA DADA COMPETICAO PARA QUE POSSA SER ACESSADA NO FUTURO
     CompeticaoMultimodalidades* competicaoMultiModalidades= dynamic_cast<CompeticaoMultimodalidades*>(c);
 
     if (competicaoMultiModalidades!=nullptr) {
